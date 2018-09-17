@@ -192,6 +192,24 @@ body
 	box-sizing: border-box;
 	transition: 1s;
 }
+
+#project_3
+{
+
+	background:#000;
+	opacity:0.8;
+	color: #fff;
+	display: grid;
+	grid-template-columns:70% 30% ;	
+}
+
+#p3_describe
+{	
+	width: 80%;
+	padding: 60px;
+	font-size:20px;
+}
+
 #main_footer {
 	background: #333;
 	color:#fff;
