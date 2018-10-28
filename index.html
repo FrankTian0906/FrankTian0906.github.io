@@ -1,179 +1,211 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>My Portfolio</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./img/bigbug_favicon.ico" />
-	<link rel = "stylesheet" type = "text/css" href = "style.css">
-	<script src = "javascript.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript.js"></script>
 </head>
-<body>	
-	<nav id = "navbar">
-		<div class = "container">
+
+<body>
+	<nav id="navbar">
+		<div class="container fixed-top">
 			<ul>
-				<li><a href = "index.html">HOME</a></li>
-				<li><a href = "./source/resume.pdf">RESUME</a></li>
-				<li><a href = "#main_projects">PROJECTS</a></li>
-				<li><a href = "#main_footer">CONTECT</a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="./source/resume.pdf">RESUME</a></li>
+				<li><a href="#main_projects">PROJECTS</a></li>
+				<li><a href="#main_footer">CONTECT</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WEb
+						DEMO</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="./webDemo/scrollReveal/index.html">ScrollReveal</a>
+						<a class="dropdown-item" href="./webDemo/parallax/index.html">Parallex</a>
+						<a class="dropdown-item" href="./webDemo/carousel/index.html">Carousel</a>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</nav>
-	<div class = "clear"></div>
-	<header id= "main_header">
-		<div class = "container">
+	<div class="clear"></div>
+	<header id="main_header">
+		<div class="container">
 			<h1>
 				Portfolio
 			</h1>
-		</div> 
+		</div>
 	</header>
 	<!-- BRIEF -->
-	<article id = "main_block">
-	<div class = "container">
-	<section id = "brief">	
-		<font size="10">Welcome!</font>
-		<p><br>Hi, I am Fei Tian who graduated from Memorial University in 2018. My major is Computer Engineering, and I am solid in Java and Android SDK. I am interested in Android SDK Developer.
-		 I am passionate on implementing computer technology in different areas and learning cutting-edge technology.<br><br>  A highly technology savvy. Software developing and testing with experience in Java and Android
-SDK. Web developing in JavaScript, CSS, HTML5 and PHP. Committed to technological advancement and excellence
-in multiple tasks completed.</p>
-	</section>
-	<aside id = "sidebar">
-		<img src="./img/Myselfy.jpg"/>
-	</aside>
-	</div>
+	<article id="main_block">
+		<div class="container">
+			<section id="brief">
+				<font size="10">Welcome!</font>
+				<p><br>Hi, I am Fei Tian who graduated from Memorial University in 2018. My major is Computer Engineering, and I am
+					solid in Java and Android SDK. I am interested in Android SDK Developer.
+					I am passionate on implementing computer technology in different areas and learning cutting-edge technology.<br><br>
+					A highly technology savvy. Software developing and testing with experience in Java and Android
+					SDK. Web developing in JavaScript, CSS, HTML5 and PHP. Committed to technological advancement and excellence
+					in multiple tasks completed.</p>
+			</section>
+			<aside id="sidebar">
+				<img src="./img/Myselfy.jpg" />
+			</aside>
+		</div>
 	</article>
-	<div class = "clear"></div>
-	
+	<div class="clear"></div>
+
 	<!-- PROHECT 1 -->
-	<header class= "project_header">
-	<div id = "main_prjects">
-		<div class = "container">
-			<h1>PROJECT 1: GO UP</h1>
-		</div> 
-	</div>
+	<header class="project_header">
+		<div id="main_prjects">
+			<div class="container">
+				<h1>PROJECT 1: GO UP</h1>
+			</div>
+		</div>
 	</header>
-	
-	 <div class = "project_containt">
-	<ul>
-		<li>
-			<div class ="content_project_1">
-				<h2>
-				 	The Sports Partener
-				</h2>
-				<p>
-					Currently, people  have been beginning to pay attention to their own health by their smart phones.
-					 Excepting running, I think there are other forms of exercise. 
-					 Climbing stairs is one of the exercise, and it can be easily achieved in people's work and study gap. 
-					 Therefore, that is the reason I design the software: GO UP( DEMO, not released on Google play).					
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class ="content_project_1">
-				<h2>
-				 	Client Part(Android)
-				</h2>
-				<p>
-					The main feature is the phone can collect the data of climbing stairs and reflect the data within the line chart for the user.
-					After user register, the user start the data collecting. The application can periodically collect data by Pressure Sensor.
-					And users can check their sport data by showing the line chart off.<br>
-					The CODE is :<a href = "https://github.com/FrankTian0906/ClimbingStairs" target = "_blank">'GO UP' Client Part</a>
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class ="content_project_1">
-				<h2>
-				 	Server Part(PHP)
-				</h2>
-				<p>
-					The phone will connect the server by the Internet. Through the RESTful architectural, the users upload and download their sports data.  Building the MySQL database to store the sports data and users’ information. The coummicated form is JSON.
-					Different models respond relative featrues. Users can check their sport data with 3 modes: Day mode, week mode and Month mode which can meet the need of users.<br>
-					The CODE is :<a href = "https://github.com/FrankTian0906/ClimbStairs_Server" target = "_blank">'GO UP' Server Part</a>
-				</p>
-			</div>
-		</li>
-	</ul>
+
+	<div class="project_containt">
+		<ul>
+			<li>
+				<div class="content_project_1">
+					<h2>
+						The Sports Partener
+					</h2>
+					<p>
+						Currently, people have been beginning to pay attention to their own health by their smart phones.
+						Excepting running, I think there are other forms of exercise.
+						Climbing stairs is one of the exercise, and it can be easily achieved in people's work and study gap.
+						Therefore, that is the reason I design the software: GO UP( DEMO, not released on Google play).
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class="content_project_1">
+					<h2>
+						Client Part(Android)
+					</h2>
+					<p>
+						The main feature is the phone can collect the data of climbing stairs and reflect the data within the line chart
+						for the user.
+						After user register, the user start the data collecting. The application can periodically collect data by
+						Pressure Sensor.
+						And users can check their sport data by showing the line chart off.<br>
+						The CODE is :<a href="https://github.com/FrankTian0906/ClimbingStairs" target="_blank">'GO UP' Client Part</a>
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class="content_project_1">
+					<h2>
+						Server Part(PHP)
+					</h2>
+					<p>
+						The phone will connect the server by the Internet. Through the RESTful architectural, the users upload and
+						download their sports data. Building the MySQL database to store the sports data and usersï¿½ information. The
+						coummicated form is JSON.
+						Different models respond relative featrues. Users can check their sport data with 3 modes: Day mode, week mode
+						and Month mode which can meet the need of users.<br>
+						The CODE is :<a href="https://github.com/FrankTian0906/ClimbStairs_Server" target="_blank">'GO UP' Server Part</a>
+					</p>
+				</div>
+			</li>
+		</ul>
 	</div>
-	<div class = "clear"></div>
-	
+	<div class="clear"></div>
+
 	<!-- PROJECT 2 -->
-	<header class= "project_header">
-		<div class = "container">
+	<header class="project_header">
+		<div class="container">
 			<h1>PROJECT 2: CSS</h1>
-		</div> 
+		</div>
 	</header>
-	
+
 	<div id="project_2">
 		<div class="nested">
 			<div>
 				<h4>Circuit Simulation System(CSS)</h4>
 				<p>
-				The CSS (based on Java) is to help customer build virtual circuit on computers.
-				Through drawing the variant circuit gates and links on the panel, the user can get the simulated results just like a real circuit.
-				<br><br>The CODE is :<a href = "https://github.com/FrankTian0906/CircuitSimulator" target = "_blank">CSS</a>  
+					The CSS (based on Java) is to help customer build virtual circuit on computers.
+					Through drawing the variant circuit gates and links on the panel, the user can get the simulated results just like
+					a real circuit.
+					<br><br>The CODE is :<a href="https://github.com/FrankTian0906/CircuitSimulator" target="_blank">CSS</a>
 				</p>
 			</div>
 			<div>
 				<h4>Tool Bar</h4>
 				<p>
-				The CSS provides varient curcuit elements on the tool bar. The users can create thses elemts according to their needs. 
-				These elements include AND gate, OR gate, NOT gate, links, Input element, and output element.  
+					The CSS provides varient curcuit elements on the tool bar. The users can create thses elemts according to their
+					needs.
+					These elements include AND gate, OR gate, NOT gate, links, Input element, and output element.
 				</p>
 			</div>
 		</div>
-		<div >
-			<img src="./img/project2.png" width = 100%></img>
+		<div>
+			<img src="./img/project2.png" width=100%></img>
 		</div>
 		<div class="nested">
 			<div>
-			<h4>Pannel</h4>
-			<p>
-			 The users can put the elements on the specific spots or delete the elements.
-			 Dragging the gates and links and the spots between the terminals of the gates and links will be adapted automatically.
-			 After setting input signals, the user can get the result.
-			</p>
+				<h4>Pannel</h4>
+				<p>
+					The users can put the elements on the specific spots or delete the elements.
+					Dragging the gates and links and the spots between the terminals of the gates and links will be adapted
+					automatically.
+					After setting input signals, the user can get the result.
+				</p>
 			</div>
 			<div>
-			<h4>MVC</h4>
-			<p>
-			The design structure of CSS is MVC. Model-view-controller is an architectural pattern commonly used for developing user interfaces that divides an application into three interconnected parts.
-			In the application, the window is View part, the elements logic is Model part, and the operation is Contoller part.
-			</p>
+				<h4>MVC</h4>
+				<p>
+					The design structure of CSS is MVC. Model-view-controller is an architectural pattern commonly used for developing
+					user interfaces that divides an application into three interconnected parts.
+					In the application, the window is View part, the elements logic is Model part, and the operation is Contoller
+					part.
+				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<!-- PROJECT 3 -->
-	<header class= "project_header">
-		<div class = "container">
+	<header class="project_header">
+		<div class="container">
 			<h1>PROJECT 3: TAKE HOME</h1>
-		</div> 
-	</header>
-	<div id = "project_3">
-	
-		<div id = "p3_describe">
-			<h2>Take Home</h2>
-			<p>It is an Airline Routes System with a local database system(Android).<br><br>As a user I can enter IATA codes of an origin and a destination airport and view a path between the two on a map.<br></p>
-			<p>As a user I can enter IATA codes of an origin and destination airport that are not connected by a direct route.<br><br>
-			In this case, the route drawn on the map must show the shortest possible travel path between the two airports, going through all airports visited along the way in order.
-			 For the sake of simplicity, the shortest path is defined as the one with the least transfer.<br>
-			Technical: MVP pattern, Local Database, Google Maps API, butterKnife API;<br>
-			 <br>The CODE is :<a href = "https://github.com/FrankTian0906/Takehome" target = "_blank">Take Home</a> </p>
 		</div>
-		
+	</header>
+	<div id="project_3">
+
+		<div id="p3_describe">
+			<h2>Take Home</h2>
+			<p>It is an Airline Routes System with a local database system(Android).<br><br>As a user I can enter IATA codes of
+				an origin and a destination airport and view a path between the two on a map.<br></p>
+			<p>As a user I can enter IATA codes of an origin and destination airport that are not connected by a direct route.<br><br>
+				In this case, the route drawn on the map must show the shortest possible travel path between the two airports,
+				going through all airports visited along the way in order.
+				For the sake of simplicity, the shortest path is defined as the one with the least transfer.<br>
+				Technical: MVP pattern, Local Database, Google Maps API, butterKnife API;<br>
+				<br>The CODE is :<a href="https://github.com/FrankTian0906/Takehome" target="_blank">Take Home</a> </p>
+		</div>
+
 		<div>
-			<video height="680" width= "340" autoplay muted controls loop>
-				<source src = "./source/Takehome_demo.mp4" type = "video/mp4">
+			<video height="680" width="340" autoplay muted controls loop>
+				<source src="./source/Takehome_demo.mp4" type="video/mp4">
 			</video>
 		</div>
-	
+
 	</div>
-	
-	 <footer id= "main_footer">
-	 <p>
-	 	copyright &copy;2018 personal website <br>
-	 	Author: Fei Tian<br>
-	 	Phone: 1-709-986-6307<br>
-		<a href="Mailto:ftian@mun.ca">E-mail: ftian@mun.ca</a>	 
-	 </p>
-	 </footer>
+
+	<footer id="main_footer">
+		<p>
+			copyright &copy;2018 personal website <br>
+			Author: Fei Tian<br>
+			Phone: 1-709-986-6307<br>
+			<a href="Mailto:ftian@mun.ca">E-mail: ftian@mun.ca</a>
+		</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	 crossorigin="anonymous"></script>
+	<!--twitter_bootstrap_4.1.3_js-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
+
 </html>
